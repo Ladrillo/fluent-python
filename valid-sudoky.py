@@ -28,6 +28,7 @@ def isValidSudoku(board):
     lines_to_check = [*rows, *columns, *flattened_submatrixes]
     return all(validator(line) for line in lines_to_check)
 
+
 test_board = [
     ["5", "3", ".", ".", "7", ".", ".", ".", "."],
     ["6", ".", ".", "1", "9", "5", ".", ".", "."],
